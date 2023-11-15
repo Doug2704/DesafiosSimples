@@ -23,7 +23,7 @@ public class ProdutoUsado extends Produto {
 
 	@Override
 	public String etiqueta() {
-		return super.getNome() + " (Usado) R$" + String.format("%.2f", getPreco()) + " Data de Fabricação: "
-				+ dataFabricacao.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+		return super.getNome() + " (Usado) R$" + String.format("%.2f", getPreco()) + " (Data de Fabricação: "
+				+ dataFabricacao.format(DateTimeFormatter.ofPattern("dd/MM/yyyy)"));
 	}
 }
